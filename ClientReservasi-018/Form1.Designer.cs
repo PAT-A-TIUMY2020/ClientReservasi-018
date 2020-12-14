@@ -43,6 +43,7 @@
             this.btHapus = new System.Windows.Forms.Button();
             this.btClear = new System.Windows.Forms.Button();
             this.dtPemesanan = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -128,7 +129,7 @@
             // 
             // btSimpan
             // 
-            this.btSimpan.Location = new System.Drawing.Point(643, 49);
+            this.btSimpan.Location = new System.Drawing.Point(643, 65);
             this.btSimpan.Name = "btSimpan";
             this.btSimpan.Size = new System.Drawing.Size(98, 30);
             this.btSimpan.TabIndex = 10;
@@ -138,7 +139,7 @@
             // 
             // btUpdate
             // 
-            this.btUpdate.Location = new System.Drawing.Point(643, 94);
+            this.btUpdate.Location = new System.Drawing.Point(643, 114);
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(98, 30);
             this.btUpdate.TabIndex = 11;
@@ -148,7 +149,7 @@
             // 
             // btHapus
             // 
-            this.btHapus.Location = new System.Drawing.Point(643, 142);
+            this.btHapus.Location = new System.Drawing.Point(643, 155);
             this.btHapus.Name = "btHapus";
             this.btHapus.Size = new System.Drawing.Size(98, 30);
             this.btHapus.TabIndex = 12;
@@ -158,7 +159,7 @@
             // 
             // btClear
             // 
-            this.btClear.Location = new System.Drawing.Point(643, 187);
+            this.btClear.Location = new System.Drawing.Point(643, 201);
             this.btClear.Name = "btClear";
             this.btClear.Size = new System.Drawing.Size(98, 30);
             this.btClear.TabIndex = 13;
@@ -176,11 +177,22 @@
             this.dtPemesanan.TabIndex = 14;
             this.dtPemesanan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtPemesanan_CellClick);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(633, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 41);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Go to Register";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dtPemesanan);
             this.Controls.Add(this.btClear);
             this.Controls.Add(this.btHapus);
@@ -222,6 +234,7 @@
         private System.Windows.Forms.Button btHapus;
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.DataGridView dtPemesanan;
+        private System.Windows.Forms.Button button1;
     }
 }
 
